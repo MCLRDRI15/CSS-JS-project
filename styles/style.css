@@ -93,14 +93,15 @@ body {
   margin-bottom: 3rem;
 }
 
-.container span {
+.container .button1,
+.container .button2 {
   padding: 1rem 2rem;
   margin-right: 1rem;
   border-radius: 0.5rem;
 }
 
-.principalimages .button1 a,
-.principalimages .button2 a {
+.principalimages .button1 .buttons,
+.principalimages .button2 .buttons {
   text-decoration: none;
   color: var(--white);
   cursor: pointer;
@@ -113,7 +114,7 @@ body {
   background-color: transparent;
 }
 
-.principalimages .button1 a:hover {
+.principalimages .button1 .buttons:hover {
   background: var(--white);
   color: var(--spetialGreen);
 }
@@ -128,7 +129,7 @@ body {
   background-color: var(--spetialGreen);
 }
 
-.principalimages .button2 a:hover {
+.principalimages .button2 .buttons:hover {
   background: var(--white);
   color: var(--spetialGreen);
 }
@@ -143,7 +144,7 @@ body {
   color: var(--white);
 }
 
-.principalimages .button2.visited a {
+.principalimages .button2.visited .buttons {
   background: var(--buttonVisited);
   color: var(--white);
 }
@@ -153,7 +154,7 @@ body {
   margin: auto;
 }
 
-header {
+.header {
   border-bottom: 1px inset;
   color: var(--white);
 }
@@ -175,7 +176,7 @@ header {
   color: var(--spetialGreen);
 }
 
-.containerheader nav ul {
+.containerheader .nav .navmenu {
   list-style: none;
 }
 
@@ -185,7 +186,7 @@ header {
   align-items: center;
 }
 
-.containerheader nav a {
+.containerheader .nav .navlink {
   color: var(--navColor);
   font-size: var(--one-point-one);
   text-decoration: none;
@@ -207,11 +208,11 @@ header {
   display: none;
 }
 
-.containerheader nav a:hover {
+.containerheader .nav .navlink:hover {
   color: var(--spetialGreen);
 }
 
-.containerheader nav ul li.actived > a {
+.containerheader .nav .navmenu .navitem.actived > .navlink {
   color: var(--spetialGreen);
 }
 
