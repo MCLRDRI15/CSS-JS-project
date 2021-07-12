@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 
-body {
+.body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -370,10 +370,10 @@ body {
   font-size: var(--one-point-nine);
 }
 
-.imgicons a .icon-facebook,
-.imgicons a .icon-twitter,
-.imgicons a .icon-dribbble,
-.imgicons a .icon-linkedin {
+.imgicons .icon-labels .icon-facebook,
+.imgicons .icon-labels .icon-twitter,
+.imgicons .icon-labels .icon-dribbble,
+.imgicons .icon-labels .icon-linkedin {
   font-size: var(--two-point-four);
   border-radius: 50% 50%;
   border: none;
@@ -410,7 +410,7 @@ body {
   grid-gap: 1.5rem;
 }
 
-.imghover a .icon-googleplus {
+.imghover .google-icon .icon-googleplus {
   border-radius: 50% 50%;
   border: none;
   color: var(--spetialGreen);
@@ -571,7 +571,7 @@ body {
   font-size: var(--one-point-eight);
 }
 
-.boxes p {
+.boxes .contain {
   width: 90%;
   margin-bottom: 2rem;
   text-align: left;
@@ -680,13 +680,13 @@ body {
   text-align: center;
 }
 
-.informations input {
+.informations .input {
   margin-bottom: 1rem;
 }
 
-.informations input[type="text"],
-.informations input[type="email"],
-.informations input[type="tel"] {
+.informations .input[type="text"],
+.informations .input[type="email"],
+.informations .input[type="tel"] {
   background: var(--anotherback);
   border: 1px solid var(--borderColor);
   font-size: var(--one-point-one);
@@ -712,7 +712,7 @@ body {
   color: var(--spetialGreen);
 }
 
-.information-message textarea {
+.information-message .text-area {
   position: relative;
   bottom: 0.4rem;
   background: var(--anotherback);
@@ -748,7 +748,12 @@ body {
   align-items: center;
 }
 
-.imgfooter a span {
+.imgfooter .footer .icon-facebook,
+.imgfooter .footer .icon-twitter,
+.imgfooter .footer .icon-dribbble,
+.imgfooter .footer .icon-linkedin,
+.imgfooter .footer .icon-tumblr,
+.imgfooter .footer .icon-googleplus {
   font-size: var(--two-point-three);
   margin-right: 1rem;
   color: var(--StandarBlack);
@@ -765,7 +770,7 @@ body {
   .button1 {
     margin-left: 1rem;
   }
-  .containerheader h2 {
+  .containerheader .talos {
     margin-left: 1rem;
   }
   .principalimages {
@@ -799,7 +804,7 @@ body {
   .containerheader .talos {
     font-size: var(--one-point-five);
   }
-  .navmenu li {
+  .navmenu .navitem {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -864,7 +869,7 @@ body {
     margin-left: 2rem;
     margin-bottom: 0;
   }
-  .genius-video iframe {
+  .genius-video .video {
     max-width: 340px;
     max-height: 190px;
   }
@@ -958,9 +963,9 @@ body {
     margin-right: 1.8rem;
     width: 80%;
   }
-  .form .informations input[type="text"],
-  .form .informations input[type="email"],
-  .form .informations input[type="tel"] {
+  .form .informations .input[type="text"],
+  .form .informations .input[type="email"],
+  .form .informations .input[type="tel"] {
     margin-left: 0;
     width: 18rem;
   }
@@ -976,12 +981,12 @@ body {
   .footer-container .copyright {
     font-size: var(--cero-point-nine);
   }
-  .footer-container .imgfooter a .icon-facebook,
-  .footer-container .imgfooter a .icon-twitter,
-  .footer-container .imgfooter a .icon-dribbble,
-  .footer-container .imgfooter a .icon-linkedin,
-  .footer-container .imgfooter a .icon-tumblr,
-  .footer-container .imgfooter a .icon-googleplus {
+  .footer-container .imgfooter .footer .icon-facebook,
+  .footer-container .imgfooter .footer  .icon-twitter,
+  .footer-container .imgfooter .footer  .icon-dribbble,
+  .footer-container .imgfooter .footer  .icon-linkedin,
+  .footer-container .imgfooter .footer  .icon-tumblr,
+  .footer-container .imgfooter .footer  .icon-googleplus {
     font-size: var(--one-point-eight);
   }
   .footer-section {
@@ -1009,7 +1014,7 @@ body {
     transition: left 0.3s;
     box-shadow: 0 10px 27px var(--navColor);
   }
-  .navmenu li {
+  .navmenu .navitem {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -1120,9 +1125,9 @@ body {
     margin-right: 3rem;
     width: 80%;
   }
-  .form .informations input[type="text"],
-  .form .informations input[type="email"],
-  .form .informations input[type="tel"] {
+  .form .informations .input[type="text"],
+  .form .informations .input[type="email"],
+  .form .informations .input[type="tel"] {
     margin-left: 0;
     width: 12rem;
   }
