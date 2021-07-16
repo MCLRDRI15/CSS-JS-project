@@ -653,6 +653,16 @@
   bottom: 7rem;
 }
 
+.glider-dot{
+  background-color: var(--spetialGreen);
+  opacity: 0.4;
+}
+
+.glider-dot.active{
+  background-color: var(--spetialGreen);
+  opacity: 1;
+}
+
 .container-testimonial .previus {
   left: -50px;
 }
