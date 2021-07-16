@@ -18,14 +18,25 @@ $(document).ready(() => {
   $(window).on('scroll', () => {
     if (
       $(window).scrollTop() > descriptions &&
-      $(window).scrollTop() < teamSection
+      $(window).scrollTop() < genius
     ) {
       $('#two').addClass('actived');
     } else {
       $('#two').removeClass('actived');
     }
   });
+  const genius = $('.genius-section').offset().top;
 
+  $(window).on('scroll', () => {
+    if (
+      $(window).scrollTop() > genius &&
+      $(window).scrollTop() < teamSection
+    ) {
+      $('#three').addClass('actived');
+    } else {
+      $('#three').removeClass('actived');
+    }
+  });
   const portafolio = $('.portfolio-section').offset().top;
 
   $(window).on('scroll', () => {
@@ -33,10 +44,8 @@ $(document).ready(() => {
       $(window).scrollTop() > teamSection &&
       $(window).scrollTop() < portafolio
     ) {
-      $('#three').addClass('actived');
       $('#four').addClass('actived');
     } else {
-      $('#three').removeClass('actived');
       $('#four').removeClass('actived');
     }
   });
