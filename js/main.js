@@ -2,7 +2,7 @@ $(document).ready(() => {
   const height = $('.menu').offset().top;
 
   $(window).on('scroll', () => {
-    if ($(window).scrollTop() > height) {
+    if ($(window).scrollTop() >= height) {
       $('.menu').addClass('menufixed');
     } else {
       $('.menu').removeClass('menufixed');
