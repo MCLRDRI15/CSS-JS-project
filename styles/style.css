@@ -71,8 +71,10 @@
   background-size: cover;
   display: flex;
   align-items: center;
-  -webkit-appearance: none;
-  animation: change-img 6s infinite linear;
+  -webkit-animation: changeimg 6s infinite alternate both;
+  -moz-animation: changeimg 6s infinite alternate both;
+  -o-animation: changeimg 6s infinite alternate both;
+  animation: changeimg 6s infinite alternate both;
 }
 
 .principalimages .container {
@@ -110,6 +112,7 @@
   cursor: pointer;
   font-size: var(--one);
   transition: color 0.4s ease;
+  font-weight: 600;
 }
 
 .principalimages .button1 {
@@ -153,8 +156,10 @@
 }
 
 .containerheader {
-  width: 80%;
+  position: relative;
+  width: 100%;
   margin: auto;
+  z-index: 10;
 }
 
 .header {
@@ -163,6 +168,7 @@
 }
 
 .containerheader {
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,7 +197,8 @@
 
 .containerheader .nav .navlink {
   color: var(--navColor);
-  font-size: var(--one-point-one);
+  font-size: var(--cero-point-nine);
+  font-weight: 600;
   text-decoration: none;
   margin-right: 1.25rem;
   padding: 0.625rem;
@@ -208,6 +215,8 @@
 }
 
 .hamburger {
+  position: relative;
+  right: 4rem;
   display: none;
 }
 
@@ -242,6 +251,7 @@
 
 .description-tittle {
   font-size: var(--two-point-four);
+  font-weight: 500;
 }
 
 .description-sentence {
@@ -280,6 +290,7 @@
 
 .description-areas .tittle-area {
   font-size: var(--one-point-five);
+  font-weight: 550;
   position: relative;
   margin: 0;
   top: 10px;
@@ -362,12 +373,14 @@
   height: 5.5rem;
   opacity: 0.6;
   background: var(--teamHover);
-  z-index: -1;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 .img-container:hover > .imglabels {
-  z-index: 1;
-  animation: enable-labels 1s linear;
+  opacity: 0.6;
+  /*animation: enable-labels 1s linear;*/
 }
 
 .imgicons {
@@ -418,6 +431,7 @@
 .portfoliotittle {
   text-align: center;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .portfoliotittle .description-portfolio {
@@ -473,12 +487,13 @@
   height: 100%;
   opacity: 0.7;
   background: var(--spetialGreen);
-  z-index: -1;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .image:hover > .imghover {
-  z-index: 1;
-  animation: enable-labels 0.5s linear;
+  opacity: 0.6;
 }
 
 .image .portfolio-images {
@@ -497,16 +512,17 @@
 }
 
 .blog-entries {
-  padding: 5rem;
+  padding: 0 5rem 0 8rem;
   margin: auto;
   margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 47% 47%;
   grid-template-rows: 13rem 13rem;
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
 }
 
 .blog-entries .entrie {
+  border-radius: 5px;
   border: 1px solid var(--borderColor);
   overflow: hidden;
 }
@@ -521,7 +537,7 @@
   width: 100%;
   height: 120%;
   bottom: 11rem;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   z-index: -1;
   display: none;
@@ -856,16 +872,23 @@
   .menu {
     width: 100%;
   }
-  .menu .navmenu {
+  .menu .containerheader{
+    width: 100%;
+  }
+
+  .containerheader {
+    width: 100%;
+  }
+  .menu .navmenu { 
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
     left: -100%;
-    top: 5rem;
+    top: 4.3rem;
     flex-direction: column;
     background-color: var(--white);
     width: 100%;
-    height: 60%;
+    height: 23rem;
     text-align: center;
     transition: left 0.3s ease;
     box-shadow: 0 10px 27px var(--navColor);
@@ -879,9 +902,15 @@
   }
   .navmenu.active {
     left: 0;
+    z-index: 1;
+    background: var(--white);
   }
   .navitem {
     margin: 2.5rem 0;
+  }
+  .containerheader .talos{
+    position: relative;
+    left: 2rem;
   }
   .hamburger {
     display: block;
@@ -914,7 +943,7 @@
     text-align: left;
     left: 6rem;
   }
-  .description-tittle {
+  .description-container.description-tittle {
     font-size: var(--two);
     text-align: left;
     margin-left: 1.5rem;
@@ -953,6 +982,13 @@
     margin-left: 1.5rem;
     font-size: var(--cero-point-nine);
   }
+  .imgicons {
+  position: relative;
+  top: 0.5rem;
+  padding: 3.6rem;
+  padding-top: 2.4rem;
+  margin-right: 2.4rem;
+  }
   .img-section {
     flex-direction: column;
     text-align: center;
@@ -964,7 +1000,7 @@
     margin-left: 0.5rem;
   }
   .boxes .box {
-    margin: 1.5rem 0 0 0;
+    margin: 1.6rem 0 0 0;
     text-align: left;
     font-size: var(--one-point-one);
   }
@@ -977,7 +1013,7 @@
     width: 80%;
   }
   .box-questions .boxes.enable .contain {
-    height: 11rem;
+    height: 10rem;
     width: 80%;
     margin: auto;
     transition: height 0.5s ease;
@@ -994,7 +1030,7 @@
   }
   .portfolio-section {
     margin: 0;
-    padding: 1rem;
+    padding: 2rem;
   }
   .questions-container .box-questions {
     margin: 0;
@@ -1125,7 +1161,7 @@
   .menu .navmenu {
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
     left: -100%;
     top: 5rem;
     flex-direction: column;
@@ -1148,6 +1184,14 @@
   .hamburger {
     display: block;
     cursor: pointer;
+  }
+  .containerheader .talos{
+    position: relative;
+    left: 4rem;
+  }
+
+  .containerheader {
+    width: 100%;
   }
   .genius-container {
     flex-direction: column;
@@ -1292,7 +1336,7 @@
   .form .informations .input[type="tel"] {
     margin-left: 0;
     margin-right: 0;
-    width: 18rem;
+    width: 14rem;
   }
   .form .info-message {
     margin-left: 0;
@@ -1303,8 +1347,8 @@
     width: 60%;
   }
   .information-message .text-area {
-    max-width: 80%;
-    max-height: 85%;
+    max-width: 70%;
+    max-height: 65%;
     border: 1px solid var(--borderColor);
     font-size: var(--one-point-one);
   }
@@ -1312,24 +1356,36 @@
 
 /*--------------- Animations section --------------------*/
 
-@keyframes change-img {
+@-webkit-keyframes changeimg {
   0% {
     background: url(../img/home/home-bg-2.jpg);
+    background-position: center center;
+    background-size: cover;
   }
   25% {
     background: url(../img/home/home-bg-2.jpg);
+    background-position: center center;
+    background-size: cover;
   }
   30% {
     background: url(../img/home/home-bg.jpg);
+    background-position: center center;
+    background-size: cover;
   }
   60% {
     background: url(../img/home/home-bg.jpg);
+    background-position: center center;
+    background-size: cover;
   }
   75% {
     background: url(../img/home/home-bg-2.jpg);
+    background-position: center center;
+    background-size: cover;
   }
   100% {
     background: url(../img/home/home-bg-2.jpg);
+    background-position: center center;
+    background-size: cover;
   }
 }
 
