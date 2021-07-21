@@ -770,12 +770,13 @@
   border: 1px solid var(--borderColor);
   font-size: var(--one-point-one);
   margin-left: 5.5rem;
-  width: 78%;
-  height: 2rem;
+  width: 90%;
+  height: 2.7rem;
 }
 
 .send {
   position: relative;
+  left: 1rem;
   bottom: 8rem;
   width: 25rem;
   height: 2.5rem;
@@ -793,10 +794,11 @@
 
 .information-message .text-area {
   position: relative;
+  left: 1rem;
   bottom: 0.4rem;
   background: var(--anotherback);
-  max-width: 70%;
-  max-height: 85%;
+  max-width: 80%;
+  max-height: 10rem;
   border: 1px solid var(--borderColor);
   font-size: var(--one-point-one);
 }
@@ -1124,16 +1126,20 @@
   .form .informations .input[type="email"],
   .form .informations .input[type="tel"] {
     margin-left: 0;
-    width: 18rem;
+    width: 20rem;
+    height: 2.7rem;
   }
-  .form .information-message {
-    margin-right: 2rem;
-    margin-left: 0;
-    width: 133%;
+  .information-message .text-area {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-right: 4rem;
+    right: 2rem;
+    width: 21.1rem;
   }
   .form-container .send {
-    margin-right: 0.8rem;
-    width: 75%;
+    margin-right: 2.1rem;
+    width: 72%;
   }
   .footer-container .copyright {
     font-size: var(--cero-point-nine);
@@ -1328,7 +1334,7 @@
     left: 6.7rem;
   }
   .form-container .form {
-    margin-right: 4rem;
+    margin-right: 4.8rem;
     width: 80%;
   }
   .form .informations .input[type="text"],
@@ -1336,7 +1342,8 @@
   .form .informations .input[type="tel"] {
     margin-left: 0;
     margin-right: 0;
-    width: 14rem;
+    width: 16rem;
+    height: 2.7rem;
   }
   .form .info-message {
     margin-left: 0;
@@ -1347,8 +1354,13 @@
     width: 60%;
   }
   .information-message .text-area {
-    max-width: 70%;
-    max-height: 65%;
+    position: relative;
+    left: 0;
+    right: 3rem;
+    padding: 0;
+    margin: 0;
+    max-width: 85%;
+    max-height: 70%;
     border: 1px solid var(--borderColor);
     font-size: var(--one-point-one);
   }
