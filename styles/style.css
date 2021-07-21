@@ -591,6 +591,7 @@
 
 .boxes {
   margin: 0;
+  margin-bottom: 0.2rem;
   padding: 0;
   background: var(--white);
   color: var(--navColor);
@@ -1138,7 +1139,7 @@
     width: 21.1rem;
   }
   .form-container .send {
-    margin-right: 2.1rem;
+    margin-right: 2.4rem;
     width: 72%;
   }
   .footer-container .copyright {
