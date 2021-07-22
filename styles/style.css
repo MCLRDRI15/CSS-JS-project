@@ -17,7 +17,8 @@
 }
 
 :root {
-  --sentencesColor: #808080;
+  --shadow: #e2e8f0;
+  --sentencesColor: #757575;
   --spetialGreen: #36bcb4;
   --white: #fff;
   --anotherback: #f9f9f9;
@@ -234,7 +235,7 @@
   z-index: 10;
   top: 0;
   width: 100%;
-  box-shadow: 0px 2px 1px var(--navColor);
+  border-bottom: 0.1rem solid var(--shadow);
 }
 
 /*--------------- Services Styles section --------------------*/
@@ -770,9 +771,15 @@
   background: var(--anotherback);
   border: 1px solid var(--borderColor);
   font-size: var(--one-point-one);
+  font-family: sans-serif;
   margin-left: 5.5rem;
   width: 90%;
   height: 2.7rem;
+}
+
+.informations .input:focus,
+.information-message .text-area:focus {
+  outline: 3px solid var(--spetialGreen);
 }
 
 .send {
@@ -795,11 +802,12 @@
 
 .information-message .text-area {
   position: relative;
-  left: 1rem;
+  left: 2.5rem;
   bottom: 0.4rem;
   background: var(--anotherback);
-  max-width: 80%;
+  max-width: 90%;
   max-height: 10rem;
+  font-family: sans-serif;
   border: 1px solid var(--borderColor);
   font-size: var(--one-point-one);
 }
@@ -894,7 +902,7 @@
     height: 23rem;
     text-align: center;
     transition: left 0.3s ease;
-    box-shadow: 0 10px 27px var(--navColor);
+    border-bottom: 0.1rem solid var(--shadow);
   }
   .containerheader .talos {
     font-size: var(--one-point-five);
@@ -919,10 +927,16 @@
     display: block;
     cursor: pointer;
   }
+  .bar {
+    background: var(--spetialGreen);
+  }
   .descriptions {
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+  .descriptions .description-tittle{
+    margin-left: 1rem;
   }
   .description-areas {
     margin: 0;
@@ -932,7 +946,7 @@
   .description-container .description-sentence {
     text-align: left;
     margin-left: 1.5rem;
-    width: 90%;
+    width: 85%;
   }
   .description-areas .description-about {
     margin: 0;
@@ -981,7 +995,7 @@
   }
   .team-tittle .team-sentence {
     text-align: center;
-    width: 90%;
+    width: 85%;
     margin-left: 1.5rem;
     font-size: var(--cero-point-nine);
   }
@@ -1001,6 +1015,10 @@
   }
   .imglabels {
     margin-left: 0.5rem;
+  }
+  .questions-container .description {
+    width: 85%;
+    margin-left: 1.5rem;
   }
   .boxes .box {
     margin: 1.6rem 0 0 0;
@@ -1028,16 +1046,17 @@
   }
   .boxes {
     margin: 0;
+    margin-bottom: 0.3rem;
     padding: 0;
     width: 100%;
   }
   .portfolio-section {
     margin: 0;
-    padding: 2rem;
+    padding: 3rem;
   }
   .questions-container .box-questions {
     margin: 0;
-    padding: 0;
+    padding: 0.4rem;
     width: 100%;
   }
   .portfolio-container .portfolio-principal {
@@ -1062,6 +1081,10 @@
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 10rem);
     grid-gap: 1rem;
+  }
+  .ourblog-container .description {
+    width: 85%;
+    margin-left: 1.5rem;
   }
   .blog-entries {
     margin: 0;
@@ -1093,7 +1116,10 @@
     bottom: 5rem;
     left: 1rem;
   }
-
+  .container-testimonial .description {
+    width: 85%;
+    margin-left: 1.5rem;
+  }
   .testimonial {
     padding: 1rem;
     max-width: 90%;
@@ -1111,6 +1137,10 @@
     position: relative;
     bottom: 6rem;
     left: 6.7rem;
+  }
+  .form-section .description {
+    width: 85%;
+    margin-left: 1.5rem;
   }
   .form-section {
     width: 100%;
@@ -1134,9 +1164,9 @@
     margin: 0;
     padding: 0;
     position: relative;
-    margin-right: 4rem;
-    right: 2rem;
-    width: 21.1rem;
+    margin-right: 7rem;
+    right: 3rem;
+    width: 20rem;
   }
   .form-container .send {
     margin-right: 2.4rem;
@@ -1176,7 +1206,7 @@
     width: 100%;
     text-align: center;
     transition: left 0.3s ease;
-    box-shadow: 0 10px 27px var(--navColor);
+    border-bottom: 0.1rem solid var(--shadow);
   }
   .navmenu .navitem {
     margin-top: 1rem;
@@ -1191,6 +1221,9 @@
   .hamburger {
     display: block;
     cursor: pointer;
+  }
+  .bar {
+    background: var(--spetialGreen);
   }
   .containerheader .talos{
     position: relative;
@@ -1312,7 +1345,7 @@
   }
 
   .boxes {
-    margin: 0;
+    margin-bottom: 0.4;
     padding: 0;
     width: 100%;
   }
@@ -1335,7 +1368,7 @@
     left: 6.7rem;
   }
   .form-container .form {
-    margin-right: 4.8rem;
+    margin-right: 4rem;
     width: 80%;
   }
   .form .informations .input[type="text"],
@@ -1360,8 +1393,8 @@
     right: 3rem;
     padding: 0;
     margin: 0;
-    max-width: 85%;
-    max-height: 70%;
+    max-width: 90%;
+    max-height: 65%;
     border: 1px solid var(--borderColor);
     font-size: var(--one-point-one);
   }
