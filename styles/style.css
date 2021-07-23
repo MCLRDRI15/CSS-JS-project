@@ -1020,7 +1020,7 @@
   margin-right: 2.4rem;
   }
   .img-section {
-    margin: 0 3rem 0 3rem;
+    margin: 0 2.5rem 0 2.5rem;
     flex-direction: column;
     text-align: center;
   }
@@ -1203,8 +1203,8 @@
     width: 20rem;
   }
   .form-container .send {
-    margin-right: 2 rem;
-    max-width: 72%;
+    margin-right: 3rem;
+    max-width: 82%;
   }
   .footer-container .copyright {
     font-size: var(--cero-point-nine);
