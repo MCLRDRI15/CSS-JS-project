@@ -1004,7 +1004,6 @@
   .description-areas .icon-cloud,
   .description-areas .icon-basket {
     right: 6rem;
-    margin-left: 0.2rem;
   }
   .description-areas {
     flex-direction: column;
@@ -1207,9 +1206,11 @@
     width: 100%;
   }
   .form-container{
+    margin: auto;
     position: relative;
   }
   .form {
+    padding: auto;
     grid-template-columns: 100%;
     grid-auto-flow: row dense;
     grid-gap: 1.5rem;
@@ -1225,7 +1226,6 @@
     position: relative;
     left: 1rem;
     max-width: 100%;
-    width: 22rem;
     height: 2.7rem;
   }
   .information-message .text-area {
@@ -1236,7 +1236,6 @@
     position: relative;
     left: 0.1rem;
     max-width: 100%;
-    width: 90%;
   }
   .form-container .send {
     margin: 0;
@@ -1469,7 +1468,6 @@
     width: 8rem;
     height: 4rem;
     max-height: 4rem;
-    object-fit: cover;
     position: relative;
     left: 1rem;
     bottom: 0.5rem;
