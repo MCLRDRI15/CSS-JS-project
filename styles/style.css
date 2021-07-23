@@ -17,6 +17,7 @@
 }
 
 :root {
+  --border-gray: #ebebeb;
   --shadow: #e2e8f0;
   --sentencesColor: #757575;
   --spetialGreen: #36bcb4;
@@ -406,7 +407,7 @@
   border-radius: 50%;
   text-align: center;
   padding-bottom: 1rem;
-  padding-top: 0.6rem;
+  padding-top: 0.7rem;
   width: 2.4rem;
   height: 2.4rem;
   color: var(--white);
@@ -602,11 +603,12 @@
 
 .boxes {
   margin: 0;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.7rem;
+  border-radius: 5px;
   padding: 0;
   background: var(--white);
   color: var(--navColor);
-  border: 1px solid var(--borderColor);
+  border-bottom: 0.1rem solid var(--shadow);
   overflow: hidden;
 }
 
@@ -615,7 +617,7 @@
   bottom: 0.5rem;
   margin: auto;
   background: var(--white);
-  height: 3rem;
+  height: 2.5rem;
   width: 100%;
   background: var(--white);
   border: none;
@@ -625,14 +627,14 @@
 .boxes .box .icon-focus,
 .boxes .box .icon-cloud {
   margin-right: 1rem;
-  font-size: var(--two);
+  font-size: var(--one-point-eight);
 }
 
 .boxes .box {
   cursor: pointer;
   margin: 0;
   padding: 0 0 0 2rem;
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
   font-size: var(--one-point-four);
 }
 
@@ -742,10 +744,12 @@
 /*--------------- Get it Touch Section Styles  --------------------*/
 
 .form-section {
+  margin: 0;
   background: var(--anotherback);
 }
 
 .form-container {
+  margin: auto;
   border: 0.2px solid var(--borderColor);
   text-align: center;
 }
@@ -759,7 +763,7 @@
 }
 
 .form {
-  width: 50%;
+  width: 55%;
   margin: auto;
   margin-bottom: 8rem;
   display: flex;
@@ -782,11 +786,13 @@
 .informations .input[type="email"],
 .informations .input[type="tel"] {
   background: var(--anotherback);
-  border: 1px solid var(--borderColor);
+  border: 2px solid var(--border-gray);
   font-size: var(--one-point-one);
+  border-radius: 5px;
   font-family: sans-serif;
   margin-left: 5.5rem;
-  width: 90%;
+  width: 100%;
+  min-width: 12rem;
   height: 2.7rem;
 }
 
@@ -800,8 +806,9 @@
   left: 1rem;
   bottom: 8rem;
   width: 25rem;
-  height: 2.5rem;
+  height: 2.7rem;
   border: none;
+  border-radius: 5px;
   font-size: var(--one);
   color: var(--white);
   background-color: var(--spetialGreen);
@@ -815,13 +822,16 @@
 
 .information-message .text-area {
   position: relative;
-  left: 2.5rem;
+  left: 6rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
   bottom: 0.4rem;
   background: var(--anotherback);
-  max-width: 90%;
+  max-width: 100%;
   max-height: 10rem;
+  border-radius: 5px;
   font-family: sans-serif;
-  border: 1px solid var(--borderColor);
+  border: 2px solid var(--border-gray);
   font-size: var(--one-point-one);
 }
 
@@ -861,7 +871,7 @@
   border-radius: 50%;
   text-align: center;
   padding-bottom: 1rem;
-  padding-top: 0.7rem;
+  padding-top: 0.8rem;
   width: 2.4rem;
   height: 2.4rem;
 }
@@ -1034,8 +1044,16 @@
     width: 85%;
     margin-left: 1.5rem;
   }
+  .boxes .box .icon-laptop,
+  .boxes .box .icon-focus,
+  .boxes .box .icon-cloud {
+    margin-top: 0.2rem;
+    margin-right: 1rem;
+    font-size: var(--two);
+}
   .boxes .box {
     margin: 1.6rem 0 0 0;
+    height: 3.7rem;
     text-align: left;
     font-size: var(--one-point-one);
   }
@@ -1060,7 +1078,8 @@
   }
   .boxes {
     margin: 0;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
     padding: 0;
     width: 100%;
   }
@@ -1191,20 +1210,21 @@
   .form .informations .input[type="email"],
   .form .informations .input[type="tel"] {
     margin-left: 0;
-    width: 20rem;
+    width: 22rem;
     height: 2.7rem;
   }
   .information-message .text-area {
     margin: 0;
     padding: 0;
+    padding-top: 0.5rem;
     position: relative;
-    margin-right: 7rem;
-    right: 3rem;
-    width: 20rem;
+    margin-right: 14rem;
+    right: 6rem;
+    width: 22rem;
   }
   .form-container .send {
     margin-right: 3rem;
-    max-width: 82%;
+    max-width: 90%;
   }
   .footer-container .copyright {
     font-size: var(--cero-point-nine);
@@ -1266,6 +1286,9 @@
 
   .img-section {
     margin: 0 auto 0 auto;
+  }
+  .form {
+    width: 75%;
   }
 }
 
@@ -1416,7 +1439,7 @@
     transition: height 0.5s ease;
   }
   .questions-section {
-    padding: 3rem;
+    padding: 2rem;
     margin: 0;
     width: 100%;
   }
@@ -1453,7 +1476,8 @@
   }
 
   .boxes {
-    margin-bottom: 0.4;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
     padding: 0;
     width: 100%;
   }
@@ -1499,12 +1523,13 @@
   .information-message .text-area {
     position: relative;
     left: 0;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
     right: 3rem;
-    padding: 0;
     margin: 0;
     max-width: 90%;
-    max-height: 65%;
-    border: 1px solid var(--borderColor);
+    height: 14rem;
+    border: 2px solid var(--border-gray);
     font-size: var(--one-point-one);
   }
 }
