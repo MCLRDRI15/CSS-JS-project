@@ -715,10 +715,11 @@
 
 .boxcontainer .testimonial-img {
   position: relative;
+  object-fit: cover;
   max-width: 4rem;
-  width: 8rem;
-  height: 4.5rem;
-  max-height: 4.5rem;
+  width: 7rem;
+  height: 4rem;
+  max-height: 4rem;
   left: 1rem;
   background-size: contain;
   background-position: center center;
@@ -745,11 +746,15 @@
 
 .form-section {
   margin: 0;
+  padding: 0;
   background: var(--anotherback);
 }
 
 .form-container {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 0.2px solid var(--borderColor);
   text-align: center;
 }
@@ -763,12 +768,12 @@
 }
 
 .form {
-  width: 55%;
-  margin: auto;
   margin-bottom: 8rem;
-  display: flex;
-  align-content: space-between;
-  align-items: center;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 50% 50%;
+  grid-auto-flow: row dense;
+  grid-gap: 1.5rem;
 }
 
 .informations {
@@ -790,9 +795,9 @@
   font-size: var(--one-point-one);
   border-radius: 5px;
   font-family: sans-serif;
-  margin-left: 5.5rem;
-  width: 100%;
   min-width: 12rem;
+  width: 18rem;
+  max-width: 25rem;
   height: 2.7rem;
 }
 
@@ -822,13 +827,14 @@
 
 .information-message .text-area {
   position: relative;
-  left: 6rem;
-  padding-left: 1rem;
+  right: 2rem;
+  top: 0.04rem;
   padding-top: 0.5rem;
   bottom: 0.4rem;
   background: var(--anotherback);
-  max-width: 100%;
-  max-height: 10rem;
+  max-width: 25rem;
+  min-width: 10rem;
+  max-height: 10.3rem;
   border-radius: 5px;
   font-family: sans-serif;
   border: 2px solid var(--border-gray);
@@ -1157,6 +1163,7 @@
     width: 8rem;
     height: 4rem;
     max-height: 4rem;
+    object-fit: cover;
     position: relative;
     left: 1rem;
     bottom: 0.5rem;
@@ -1198,33 +1205,42 @@
   .form-section {
     width: 100%;
   }
-  .form {
-    flex-direction: column;
-    text-align: center;
+  .form-container{
+    position: relative;
   }
-  .form-container .form {
-    margin-right: 1.8rem;
-    width: 80%;
+  .form {
+    grid-template-columns: 100%;
+    grid-auto-flow: row dense;
+    grid-gap: 1.5rem;
   }
   .form .informations .input[type="text"],
   .form .informations .input[type="email"],
   .form .informations .input[type="tel"] {
-    margin-left: 0;
-    width: 22rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    padding: 0;
+    position: relative;
+    left: 1rem;
+    max-width: 100%;
     height: 2.7rem;
   }
   .information-message .text-area {
     margin: 0;
     padding: 0;
     padding-top: 0.5rem;
+    margin-bottom: 1rem;
     position: relative;
-    margin-right: 14rem;
-    right: 6rem;
-    width: 22rem;
+    left: 0.1rem;
+    max-width: 100%;
   }
   .form-container .send {
-    margin-right: 3rem;
-    max-width: 90%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0.1rem;
+    width: 80%;
   }
   .footer-container .copyright {
     font-size: var(--cero-point-nine);
@@ -1286,9 +1302,6 @@
 
   .img-section {
     margin: 0 auto 0 auto;
-  }
-  .form {
-    width: 75%;
   }
 }
 
@@ -1453,6 +1466,7 @@
     width: 8rem;
     height: 4rem;
     max-height: 4rem;
+    object-fit: cover;
     position: relative;
     left: 1rem;
     bottom: 0.5rem;
@@ -1501,7 +1515,6 @@
   }
   
   .form-container .form {
-    margin-right: 4rem;
     width: 80%;
   }
   .form .informations .input[type="text"],
