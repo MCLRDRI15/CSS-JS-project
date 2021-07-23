@@ -511,6 +511,7 @@
   height: 100%;
   background-size: contain;
   background-position: center center;
+  object-fit: cover;
 }
 
 /*--------------- Our-Blog Styles section --------------------*/
@@ -1202,7 +1203,7 @@
     width: 20rem;
   }
   .form-container .send {
-    margin-right: 2rem;
+    margin-right: 2 rem;
     max-width: 72%;
   }
   .footer-container .copyright {
