@@ -817,13 +817,11 @@
 .informations .input[type="tel"] {
   background: var(--anotherback);
   border: 2px solid var(--border-gray);
-  font-size: var(--one-point-one);
+  font-size: var(--one);
   border-radius: 5px;
   font-family: sans-serif;
-  min-width: 12rem;
-  width: 18rem;
-  max-width: 25rem;
-  height: 2.7rem;
+  width: 21rem;
+  height: 3rem;
 }
 
 .informations .input:focus,
@@ -833,8 +831,7 @@
 
 .send {
   position: relative;
-  left: 1rem;
-  bottom: 8rem;
+  bottom: 7rem;
   width: 25rem;
   height: 2.7rem;
   border: none;
@@ -857,13 +854,12 @@
   padding-top: 0.5rem;
   bottom: 0.4rem;
   background: var(--anotherback);
-  max-width: 25rem;
-  min-width: 10rem;
-  max-height: 10.3rem;
+  width: 21rem;
+  max-height: 11rem;
   border-radius: 5px;
   font-family: sans-serif;
   border: 2px solid var(--border-gray);
-  font-size: var(--one-point-one);
+  font-size: var(--one);
 }
 
 /*--------------- Footer Section Styles --------------------*/
@@ -1241,10 +1237,11 @@
     position: relative;
   }
   .form {
+    width: 100%;
     padding: auto;
     grid-template-columns: 100%;
     grid-auto-flow: row dense;
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
   }
   .form .informations .input[type="text"],
   .form .informations .input[type="email"],
@@ -1256,17 +1253,18 @@
     padding: 0;
     position: relative;
     left: 1rem;
-    max-width: 100%;
+    width: 99%;
     height: 2.7rem;
   }
   .information-message .text-area {
     margin: 0;
+    margin-right: 0.5rem;
     padding: 0;
     padding-top: 0.5rem;
     margin-bottom: 1rem;
     position: relative;
     left: 0.1rem;
-    max-width: 100%;
+    width: 94%;
   }
   .form-container .send {
     margin: 0;
@@ -1571,34 +1569,33 @@
     left: 6.7rem;
   }
   
-  .form-container .form {
-    width: 80%;
-  }
-  .form .informations .input[type="text"],
-  .form .informations .input[type="email"],
-  .form .informations .input[type="tel"] {
-    margin-left: 0;
+  .informations {
     margin-right: 0;
-    width: 16rem;
-    height: 2.7rem;
+    position: relative;
+    right: 0.1rem;
+  }
+
+  .informations .input[type="text"],
+  .informations .input[type="email"],
+  .informations .input[type="tel"] {
+    border-radius: 5px;
+    font-family: sans-serif;
+    max-width: 16rem;
+    height: 3rem;
   }
   .form .info-message {
     margin-left: 0;
   }
-  .form-container .send {
-    margin-right: 0;
-    margin-left: 0;
-    width: 60%;
+  .send {
+    width: 25rem;
   }
   .information-message .text-area {
-    position: relative;
-    left: 0;
     padding-left: 1rem;
     padding-top: 0.5rem;
-    right: 3rem;
+    right: 2rem;
     margin: 0;
-    max-width: 90%;
-    height: 14rem;
+    max-width: 17rem;
+    height: 11rem;
     border: 2px solid var(--border-gray);
     font-size: var(--one-point-one);
   }
