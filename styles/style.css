@@ -269,6 +269,7 @@
   right: 5rem;
   display: grid;
   grid-template-columns: 13% 100%;
+  grid-template-rows: 1fr;
 }
 
 .description-areas .icon-laptop,
@@ -299,6 +300,7 @@
 .description-areas {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 2rem;
 }
 
