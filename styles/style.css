@@ -297,13 +297,13 @@
 }
 
 .description-areas {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2rem;
 }
 
 .description-areas .description-about {
-  max-width: 78%;
+  max-width: 90%;
   font-weight: 300;
   color: var(--sentencesColor);
   font-size: var(--one);
@@ -991,7 +991,7 @@
     margin-left: 1rem;
   }
   .area{
-    right: 4rem;
+    right: 3rem;
   }
   .description-areas {
     margin: 0;
@@ -1034,8 +1034,9 @@
     right: 6rem;
   }
   .description-areas {
-    flex-direction: column;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 2rem;
   }
   .genius-container {
     flex-direction: column;
@@ -1388,15 +1389,6 @@
   .containerheader {
     width: 100%;
   }
-  .genius-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .description-frase {
-    text-align: left;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-  }
   .description-areas .icon-laptop,
   .description-areas .icon-focus,
   .description-areas .icon-cloud,
@@ -1406,6 +1398,15 @@
   }
   .area{
     right: 3rem;
+  }
+  .genius-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .description-frase {
+    text-align: left;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
   }
   .genius-video {
     margin-right: 5.2rem;
@@ -1521,6 +1522,7 @@
     height: 4rem;
     max-height: 4rem;
     position: relative;
+    object-fit: cover;
     left: 1rem;
     bottom: 0.5rem;
   }
