@@ -264,13 +264,36 @@
   margin-bottom: 1.5rem;
 }
 
+.area{
+  position: relative;
+  right: 5rem;
+  display: grid;
+  grid-template-columns: 13% 100%;
+}
+
 .description-areas .icon-laptop,
 .description-areas .icon-focus,
 .description-areas .icon-cloud,
 .description-areas .icon-basket {
+  margin: 0;
+  padding: 0;
   position: relative;
-  top: 38px;
+  top: 0.5rem;
+  left: 5rem;
   font-size: var(--one-point-eight);
+}
+
+.etline-page{
+  text-decoration: none;
+  color: var(--spetialGreen);
+  font-weight: 500;
+}
+
+.texts-area{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 5.5rem;
 }
 
 .description-areas {
@@ -280,7 +303,7 @@
 }
 
 .description-areas .description-about {
-  max-width: 75%;
+  max-width: 78%;
   font-weight: 300;
   color: var(--sentencesColor);
   font-size: var(--one);
@@ -967,6 +990,9 @@
   .descriptions .description-tittle{
     margin-left: 1rem;
   }
+  .area{
+    right: 4rem;
+  }
   .description-areas {
     margin: 0;
     padding: 0;
@@ -978,6 +1004,7 @@
     width: 85%;
   }
   .description-areas .description-about {
+    max-width: 85%;
     margin: 0;
     padding: 2rem 0;
     font-size: var(--cero-point-nine);
@@ -985,6 +1012,7 @@
     margin-left: 6rem;
     text-align: left;
   }
+
   .description-areas .tittle-area {
     text-align: left;
     left: 6rem;
@@ -1255,6 +1283,10 @@
   .footer-container .imgfooter .footer .icon-googleplus {
     font-size: var(--one-point-eight);
   }
+  .imgfooter {
+    margin:auto;
+    width: 80%;
+  }
   .footer-section {
     width: 100%;
   }
@@ -1268,6 +1300,16 @@
 
 @media screen and (max-width: 1200px) and (min-width: 768px){
     
+  .description-areas .icon-laptop,
+  .description-areas .icon-focus,
+  .description-areas .icon-cloud,
+  .description-areas .icon-basket {
+  left: 3rem;
+  font-size: var(--one-point-eight);
+  }
+  .area{
+    right: 3rem;
+  }
   .portfolio-section {
     margin: 0 auto 0 auto;
     padding: 2rem;
@@ -1354,6 +1396,16 @@
     text-align: left;
     margin-left: 1rem;
     margin-bottom: 1rem;
+  }
+  .description-areas .icon-laptop,
+  .description-areas .icon-focus,
+  .description-areas .icon-cloud,
+  .description-areas .icon-basket {
+  left: 3rem;
+  font-size: var(--one-point-eight);
+  }
+  .area{
+    right: 3rem;
   }
   .genius-video {
     margin-right: 5.2rem;
