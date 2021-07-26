@@ -19,7 +19,8 @@
 :root {
   --border-gray: #ebebeb;
   --shadow: #e2e8f0;
-  --sentencesColor: #757575;
+  --sentencesColor: #969696;
+  --form-text: #969696;
   --spetialGreen: #36bcb4;
   --white: #fff;
   --anotherback: #f9f9f9;
@@ -86,7 +87,7 @@
 }
 
 .principalimages .tittle-page {
-  font-weight: 600;
+  font-weight: 550;
   font-size: var(--two-point-one);
   text-align: center;
   margin-bottom: 0.3125rem;
@@ -252,8 +253,8 @@
 }
 
 .description-tittle {
-  font-size: var(--two-point-four);
-  font-weight: 500;
+  font-size: var(--two-point-three);
+  font-weight: 550;
 }
 
 .description-sentence {
@@ -287,7 +288,7 @@
 .etline-page{
   text-decoration: none;
   color: var(--spetialGreen);
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .texts-area{
@@ -353,6 +354,10 @@
 .team-tittle {
   text-align: center;
   margin-top: 5rem;
+}
+
+.team-tittle .description-tittle{
+  font-size: var(--two-point-three);
 }
 
 .team-tittle .team-sentence {
@@ -461,11 +466,11 @@
 .portfoliotittle {
   text-align: center;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .portfoliotittle .description-portfolio {
-  font-size: var(--two-point-five);
+  font-size: var(--two-point-three);
 }
 
 .portfolio-principal {
@@ -549,6 +554,7 @@
 }
 
 .blog-entries {
+  width: 85%;
   padding: 0 5rem 0 8rem;
   margin: auto;
   margin-bottom: 5rem;
@@ -579,6 +585,7 @@
   z-index: -1;
   display: none;
   visibility: hidden;
+  object-fit: cover;
 }
 
 .entrie:hover > .entrie-container .hover-frase {
@@ -784,6 +791,11 @@
   text-align: center;
 }
 
+.form-container .description-tittle{
+  font-weight: 550;
+  font-size: var(--two-point-three);
+}
+
 .form-container .description {
   color: var(--sentencesColor);
   position: relative;
@@ -793,6 +805,7 @@
 }
 
 .form {
+  margin-top: 1.1rem;
   margin-bottom: 8rem;
   display: grid;
   text-align: center;
@@ -810,6 +823,7 @@
 
 .informations .input {
   margin-bottom: 1rem;
+  color: var(--form-text);
 }
 
 .informations .input[type="text"],
@@ -860,6 +874,13 @@
   font-family: sans-serif;
   border: 2px solid var(--border-gray);
   font-size: var(--one);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--form-text);
+  opacity: 1; /* Firefox */
+  position: relative;
+  left: 1rem;
 }
 
 /*--------------- Footer Section Styles --------------------*/
@@ -1158,6 +1179,7 @@
     max-height: 100%;
   }
   .blog-entries {
+    width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 10rem);
     grid-gap: 1rem;
@@ -1460,6 +1482,13 @@
     max-width: 18rem;
     min-width: 13rem;
     max-height: 100%;
+  }
+
+  .blog-entries{
+    width: 100%;
+  }
+  .blog-entries .hover-image{
+    object-fit: cover;
   }
 
   .entrie:first-child {
